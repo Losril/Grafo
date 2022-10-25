@@ -49,7 +49,8 @@ def IteraGrafo():
   tPFinal = time.process_time()
 
   with open("lista_adj.txt", "a") as f:
-    f.write(str(tPFinal - tPInicio) + "s\n")
+    mystr = str(round(tPFinal - tPInicio, 3))+"s\n"
+    f.write(mystr)
     f.close
 
 if __name__ == "__main__":
